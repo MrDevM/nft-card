@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  max-width: 100%;
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+  color: hsl(215, 51%, 70%);
+}
+main {
+  width: 310px;
+  padding: 20px;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 15px;
+  box-shadow: 10px 5px 30px hsla(0, 0%, 0%, 0.2);
+}
+main .equil {
+  width: 100%;
+  height: 270px;
+  border-radius: 8px;
+}
+.images {
+  position: relative;
+  cursor: pointer;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 270px;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-image: url("images/icon-view.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: hsl(178, 100%, 50%);
+  border-radius: 8px;
+}
+main .images:hover .overlay {
+  opacity: 0.7;
+}
+
+main h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 20px;
+  margin: 15px 0;
+  cursor: pointer;
+}
+main h1:hover {
+  color: hsl(178, 100%, 50%);
+}
+/* --------- text part ---------  */
+.text > p {
+  line-height: 23px;
+}
+
+/* ----------- middle part -----------  */
+.middle {
+  display: flex;
+  justify-content: space-between;
+  margin: 19px 0 20px;
+}
+.middle span {
+  position: relative;
+  top: -3px;
+  left: 5px;
+  margin-right: 5px;
+}
+.middle strong {
+  position: relative;
+  top: -3px;
+  left: 5px;
+  color: hsl(178, 100%, 50%);
+}
+
+hr {
+  border: 0.4px solid hsl(215, 32%, 27%);
+}
+/* ------------ the lower------------ */
+.lower {
+  display: flex;
+  margin: 15px 0 10px 0;
+}
+.lower img {
+  width: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.lower p {
+  position: relative;
+  top: 3px;
+  left: 12px;
+}
+.lower span {
+  color: hsl(0, 0%, 100%);
+}
+.lower span:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
