@@ -25,7 +25,7 @@ main {
   border-radius: 15px;
   box-shadow: 10px 5px 30px hsla(0, 0%, 0%, 0.2);
 }
-main .equil {
+.equil {
   width: 100%;
   height: 270px;
   border-radius: 8px;
@@ -50,7 +50,7 @@ main .equil {
   background-color: hsl(178, 100%, 50%);
   border-radius: 8px;
 }
-main .images:hover .overlay {
+.images:hover .overlay {
   opacity: 0.7;
 }
 
